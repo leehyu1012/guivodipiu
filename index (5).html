@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Gửi Emiu Yêu Thương 💖</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #ffb6c1, #ffe4e1);
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            font-family: 'Segoe UI', sans-serif;
+        }
+        .thu {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(255, 255, 255, 0.85);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(255, 20, 147, 0.6);
+            max-width: 90%;
+            max-height: 70vh;
+            overflow-y: auto;
+            text-align: center;
+            animation: nhapnhay 2s infinite alternate;
+        }
+        .thu h1 {
+            color: deeppink;
+            font-size: 26px;
+            text-align: center;
+        }
+        .thu p {
+            color: #444;
+            font-size: 18px;
+            line-height: 1.6;
+            text-align: justify;
+            padding-right: 10px;
+        }
+        @keyframes nhapnhay {
+            from { box-shadow: 0 0 15px rgba(255, 105, 180, 0.5); }
+            to { box-shadow: 0 0 25px rgba(255, 20, 147, 0.9); }
+        }
+        .trai-tim, .hoa-hong {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            animation: roi 6s linear infinite;
+            opacity: 0.9;
+            z-index: 0;
+        }
+        .hoa-hong {
+            width: 40px;
+            height: 40px;
+        }
+        @keyframes roi {
+            0% { transform: translateY(-50px) rotate(0deg); opacity: 0; }
+            10% { opacity: 1; }
+            100% { transform: translateY(100vh) rotate(360deg); opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Nhạc nền tự động phát -->
+<audio autoplay loop>
+    <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_240d22163b.mp3?filename=romantic-love-117779.mp3" type="audio/mpeg">
+</audio>
+
+<div class="thu">
+    <h1>Gửi emiu yêu thương của anhiu 💌🥰</h1>
+    <p>
+        Hôm nay anhiu muốn gửi tới emiu một lời xin lỗi thật lòng nhất luôn ạ…<br><br>
+        Anhiu biết là do yêu emiu nhiều quá, thương emiu quá nên đó anhiu đã hun nhiệt quá và anhh cũng mạnh tay mạnh môi một xíu làm tai với miệng emiu bị đau trong mấy ngày nay.<br><br>
+        Thật sự anhiu không cố ý đâu ạ, anhiu biết như vậy là làm emiu khó chịu, làm emiu đau thì anhiu cũng xót, cũng thương vô cùng lun, anhiu cũng buồn lắm ạ đến ăn khum ngon ngủ cũng khum được nữa, chỉ lun mong sao cho emiu sớm bình phục.<br><br>
+        Chỉ tại yêu quá, thương quá, nên lúc được ôm, được hôn emiu là anhiu khum kiềm chế nổi nữa, cảm xúc nó mạnh quá làm anhiu chỉ muốn giữ emiu thật chặt, gần emiu thật lâu thuii aaa.<br><br>
+        Anhiu xin lỗi vợ thiệt nhiều, hứa từ nay sẽ nhẹ nhàng hơn, sẽ để ý từng chút một, sẽ khum để emiu bị đau hay khó chịu nữa đâu nhaa…<br><br>
+        Anhiu biết bản thân anhh lúc đó là anhiu thể hiện tình cảm với emiu mà khiến emiu bị thương như thế mà emiu vẫn yêu thương anhh, chính vì thế mà anhiu càng phải trân trọng, giữ gìn emiu hơn nữa đó ạ.<br><br>
+        Với lại anhiu cũng đang cố gắng tập luyện siêu chăm luôn, sớm thôi anhiu sẽ có 6 múi thiệt đẹp, lúc đó emiu muốn sờ nắn, muốn ôm ấp thoả thích cho đã nư luôn cũng được á, mà nhẹ tay với bụng anhiu thôi nhaa 😝<br><br>
+        Anhiu hứa sẽ khum bao giờ làm emiu đau nữa, sẽ nhẹ nhàng hơn, tình cảm hơn, yêu emiu nhiều hơn mỗi ngày, luôn trân trọng, luôn bảo vệ emiu thiệt tốt.<br><br>
+        Emiu đừng giận anhiu nữa nhaa, tha lỗi cho anhiu lần này, mai mốt anhiu sẽ kiểm soát cảm xúc hơn, chỉ còn ôm emiu dịu dàng, yêu thương emiu thật nhiều thôi ạ.<br><br>
+        <b>To:</b> Người anhiu yêu nhất trên đời ❤🌞<br>
+        <b>From:</b> Cpink biết lỗi thiệt sự 🐖
+    </p>
+</div>
+
+<script>
+    function traiTimRoi() {
+        const tim = document.createElement('img');
+        tim.src = 'https://cdn-icons-png.flaticon.com/512/833/833472.png';
+        tim.classList.add('trai-tim');
+        tim.style.left = Math.random() * window.innerWidth + 'px';
+        document.body.appendChild(tim);
+        setTimeout(() => tim.remove(), 6000);
+    }
+
+    function hoaHongRoi() {
+        const hoa = document.createElement('img');
+        hoa.src = 'https://cdn-icons-png.flaticon.com/512/616/616408.png';
+        hoa.classList.add('hoa-hong');
+        hoa.style.left = Math.random() * window.innerWidth + 'px';
+        document.body.appendChild(hoa);
+        setTimeout(() => hoa.remove(), 6000);
+    }
+
+    setInterval(traiTimRoi, 400);
+    setInterval(hoaHongRoi, 1500);
+</script>
+
+</body>
+</html>
